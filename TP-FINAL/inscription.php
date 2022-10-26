@@ -12,9 +12,15 @@ session_start();
 if (isset($_POST['submit'])){
 	
 	$nom = $_POST['nom'];
-	$prenom = $_POST['nom'];
-	$email = $_POST['nom'];
-	$passw = $_POST['passw'];
+	$prenom = $_POST['prenom'];
+	$email = $_POST['email'];
+	$passw = md5($_POST['passw']);
+	
+$sql = "INSERT INTO users (nom, prenom, email, passw)
+		VALUES('$nom', '$prenom', '$email', '$passw')";
+$result=mysql_query($conn,$sql);
+}
+?>
 -->
 
 
