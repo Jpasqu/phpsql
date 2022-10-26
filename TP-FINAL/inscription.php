@@ -2,6 +2,19 @@
     LA LIAISON AVEC LA BASE DE DONNEES
     LA DECLARATION DES VARIABLES
     ET LA GESTION DES ERREURS
+<?php
+include 'db.php';
+
+error_reporting(0);
+session_start();
+
+
+if (isset($_POST['submit'])){
+	
+	$nom = $_POST['nom'];
+	$prenom = $_POST['nom'];
+	$email = $_POST['nom'];
+	$motdepasse = $_POST['nom'];
 -->
 
 
