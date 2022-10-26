@@ -14,7 +14,7 @@ if (isset($_POST['submit'])){
 	$nom = $_POST['nom'];
 	$prenom = $_POST['nom'];
 	$email = $_POST['nom'];
-	$motdepasse = $_POST['nom'];
+	$passw = $_POST['passw'];
 -->
 
 
